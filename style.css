@@ -1,1 +1,40 @@
 /* Add your CSS here */
+/* Set the background color of the page to dark grey */
+body {
+	background-color: #222; /* Dark grey background */
+	background-image: url('img/ChatGPT\ Image\ Sep\ 11\,\ 2025\,\ 05_23_03\ PM.png'); /* Change to your image filename */
+	background-size: cover; /* Make image cover the whole background */
+	background-repeat: no-repeat; /* Prevent repeating */
+	background-position: center; /* Center the image */
+}
+/* Style for the Intel logo */
+header img {
+	width: 1000px; /* Set logo width to 200px */
+}
+
+/* Timeline Cards Section - Flexbox layout */
+section {
+	white-space: nowrap; /* Prevent cards from wrapping */
+	padding: 24px 0;
+	overflow-x: auto; /* Add horizontal scrollbar if needed */
+}
+
+/* Style for each card */
+section > div {
+	background: #f5f5f5; /* Light background for card */
+	border: 1px solid #ddd; /* Thin border around card */
+	border-radius: 8px; /* Rounded corners */
+	box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* Soft shadow */
+	padding: 16px; /* Space inside card */
+	width: 400px; /* Wider card to force scrollbar */
+	box-sizing: border-box; /* Include padding in width */
+	transition: box-shadow 0.2s;
+	display: inline-block; /* Place cards side by side */
+	margin-right: 16px; /* Space between cards */
+  white-space: normal; /* Allow text to wrap inside the card */
+}
+
+/* Optional: Add hover effect for cards */
+section > div:hover {
+	box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
